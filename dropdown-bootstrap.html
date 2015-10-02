@@ -1,0 +1,17 @@
+<template name="i18n_dropdown_bootstrap3_component">
+  {{#if i18n_enabled}}
+    <div class="dropdown">
+      <a class="dropdown-toggle" id="dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{i18n_currentLanguage.name}}
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdown-language">
+        {{#each i18n_sortedLanguages}}
+          <li><a href="#" class="language-selector">{{name}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  {{else}}
+    <span>No i18n files found</span>
+  {{/if}}
+</template>

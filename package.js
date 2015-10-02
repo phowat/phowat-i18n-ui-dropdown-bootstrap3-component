@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
   api.use('ecmascript');
-  api.use(['templating', 'amplify', 'tap:i18n', 'tap:i18n-ui'], 'client');
+  api.use(['templating', 'amplify@1.0.0', 'tap:i18n@1.6.1', 'tap:i18n-ui@0.7.0'], 'client');
 
   api.addFiles([
     'dropdown-bootstrap.html',
